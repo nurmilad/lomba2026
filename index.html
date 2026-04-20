@@ -79,7 +79,7 @@
       width: 20px;
     }
 
-    /* 4 TOMBOL UTAMA + TOMBOL GRUP (kita buat grid 2 kolom, lalu tombol grup full width) */
+    /* 4 TOMBOL UTAMA */
     .action-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -404,6 +404,41 @@
       margin-top: 12px;
       font-size: 0.9rem;
     }
+
+    .schedule-note {
+      background: #eef3fc;
+      border-radius: 20px;
+      padding: 12px 16px;
+      margin: 12px 0;
+      font-size: 0.85rem;
+      border-left: 4px solid #2a9d7e;
+    }
+
+    .rekomendasi-link {
+      background: #e8f0fe;
+      border-radius: 24px;
+      padding: 16px 18px;
+      margin: 20px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      border: 1px solid #c5d9e8;
+    }
+    .rekomendasi-link i {
+      font-size: 2rem;
+      color: #2a7f6e;
+    }
+    .rekomendasi-link a {
+      font-weight: 700;
+      color: #0b5e4b;
+      text-decoration: none;
+      border-bottom: 2px solid #2d9c7c;
+      word-break: break-all;
+    }
+    .rekomendasi-link a:hover {
+      color: #1a7f64;
+    }
   </style>
 </head>
 <body>
@@ -422,7 +457,7 @@
     </div>
   </div>
 
-  <!-- 4 TOMBOL UTAMA (Registrasi, Juknis, Lingkup Materi, WhatsApp Panitia) -->
+  <!-- 4 TOMBOL UTAMA -->
   <div class="action-grid">
     <a href="https://forms.gle/nP2RquBnAHhux1Ft7" class="action-card" target="_blank" rel="noopener noreferrer">
       <i class="fas fa-user-plus"></i>
@@ -442,39 +477,58 @@
     </a>
   </div>
 
-  <!-- TOMBOL GABUNG GRUP WHATSAPP LOMBA (full width) -->
+  <!-- TOMBOL GABUNG GRUP WHATSAPP LOMBA -->
   <a href="https://chat.whatsapp.com/BKmUtjWYUSN1ay8zHntVAs?mode=gi_t" class="group-wa-button" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-whatsapp"></i>
     <span>👥 GABUNG GRUP WHATSAPP LOMBA</span>
     <i class="fas fa-chevron-right"></i>
   </a>
 
-  <!-- ========== JUKNIS LENGKAP ========== -->
+  <!-- ========== JUKNIS LENGKAP (DENGAN JADWAL LENGKAP & SURAT REKOMENDASI) ========== -->
   <div class="card" id="juknis-section">
     <div class="section-title">
       <i class="fas fa-clipboard-list"></i>
       <span>Petunjuk Teknis Lomba (Juknis) Lengkap</span>
     </div>
     
-    <div class="sub-title"><i class="fas fa-flag-checkered"></i> Latar Belakang & Dasar</div>
-    <p>Nurmilad Boarding School menyelenggarakan Lomba Mata Pelajaran ke-5 tingkat SD se-Kabupaten Wajo sebagai tradisi keilmuan yang mengintegrasikan mata pelajaran inti (Matematika, IPA, Bahasa Indonesia, PAI, dan Sejarah Wajo) dengan uji kompetensi ibadah praktis (shalat dan wudhu). Dasar kegiatan: Program Tahunan Nurmilad, rekomendasi Dinas Pendidikan Kab. Wajo, kerjasama dengan Yayasan Budaya Wajo, dan hasil rapat panitia 2 April 2026.</p>
+    <!-- Latar Belakang lengkap (tanpa dasar) -->
+    <div class="sub-title"><i class="fas fa-flag-checkered"></i> Latar Belakang</div>
+    <p>Nurmilad Boarding School sebagai lembaga pendidikan berbasis pesantren yang berkomitmen mencetak generasi unggul, terus berupaya meningkatkan kualitas pembelajaran dan daya saing murid. Salah satu wujud nyata adalah penyelenggaraan <strong>Lomba Mata Pelajaran</strong> yang saat ini sudah tahun ke-5. Meskipun tidak berlangsung setiap tahun secara berurutan, lomba ini telah menjadi tradisi keilmuan yang dinanti oleh murid SD di Kabupaten Wajo.</p>
+    <p style="margin-top: 12px;">Memasuki tahun ke-5 penyelenggaraan, lomba ini kembali diadakan dengan semangat baru: mengintegrasikan penguasaan mata pelajaran inti (Matematika, IPA, Bahasa Indonesia, PAI, dan Sejarah Wajo) dengan uji kompetensi ibadah praktis (shalat dan wudhu). Hal ini sejalan dengan visi Nurmilad Boarding School untuk melahirkan generasi yang tidak hanya cerdas secara intelektual, tetapi juga kokoh dalam spiritualitas dan bangga terhadap budayanya.</p>
+    <p style="margin-top: 12px;">Kegiatan ini juga menjadi ajang silaturahmi akademik antar sekolah dasar di Kabupaten Wajo, sekaligus menjaring bibit-bibit unggul untuk melanjutkan pendidikan di lingkungan pesantren yang modern namun tetap berpegang teguh pada nilai-nilai keislaman dan kearifan lokal. Dengan mengusung tema <strong>"Cerdas, Beriman, dan Berbudaya"</strong>, lomba ini diharapkan mampu mendorong semangat belajar siswa sekaligus memperkuat karakter religius dan cinta tanah air.</p>
 
-    <div class="sub-title"><i class="fas fa-calendar-week"></i> Jadwal & Tempat (4 Mei 2026)</div>
-    <div style="overflow-x: auto;">
-      <table>
-        <thead><tr><th>Waktu</th><th>Kegiatan</th></tr></thead>
+    <!-- JADWAL LENGKAP (sesuai file upload) -->
+    <div class="sub-title"><i class="fas fa-calendar-week"></i> Jadwal Lengkap Kegiatan</div>
+    
+    <!-- Jadwal Pendaftaran -->
+    <div class="schedule-note">
+      <i class="fas fa-edit"></i> <strong>Masa Pendaftaran</strong><br>
+      📅 20 April – 4 Mei 2026<br>
+      🕒 Online: 24 jam (via Google Form)<br>
+      🕒 Offline: 08.00 – 15.00 WITA (setiap hari, kecuali Jumat <strong>libur</strong>)<br>
+      📍 Tempat: Sekretariat Panitia, Kampus Nurmilad Boarding School, Desa Lempong, Kec. Bola, Kab. Wajo<br>
+      📋 Persyaratan: Fotokopi rapor kelas 6 semester ganjil (halaman biodata & nilai) yang telah dilegalisir.
+    </div>
+
+    <!-- Jadwal Hari Pelaksanaan (4 Mei 2026) -->
+    <div style="overflow-x: auto; margin-top: 16px;">
+      <table style="min-width: 300px;">
+        <thead>
+          <tr><th>Waktu</th><th>Kegiatan</th><th>Lokasi</th></tr>
+        </thead>
         <tbody>
-          <tr><td>08.00 – 09.00</td><td>Pembukaan & simulasi pengisian LJK</td></tr>
-          <tr><td>09.00 – 10.30</td><td>Tes Tertulis (90 menit, 50 soal)</td></tr>
+          <tr><td>08.00 – 09.00</td><td>Pembukaan & Simulasi Pengisian LJK</td><td rowspan="4">Kampus Nurmilad Boarding School</td></tr>
+          <tr><td>09.00 – 10.30</td><td>Tes Tertulis (50 soal, 90 menit)</td></tr>
           <tr><td>13.00 – 14.00</td><td>Praktik Shalat & Wudhu (khusus 10 besar)</td></tr>
-          <tr><td>14.00 – 15.00</td><td>Penutupan & Pengumuman Juara</td></tr>
+          <tr><td>14.00 – 15.00</td><td>Penutupan & Penyerahan Hadiah</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="highlight-box">
-      <i class="fas fa-info-circle"></i> <strong>Pendaftaran:</strong> 20 April – 4 Mei 2026 (online 24 jam / offline 08.00-15.00, Jumat libur). Setiap peserta wajib melampirkan <strong>fotokopi rapor kelas 6 semester ganjil (halaman biodata & nilai) yang telah dilegalisir</strong>.
+    <div class="highlight-box" style="margin-top: 12px;">
+      <i class="fas fa-clock"></i> <strong>Catatan Jadwal:</strong> Jadwal sewaktu-waktu dapat berubah. Peserta diharapkan selalu memantau informasi terbaru melalui grup WhatsApp atau kontak panitia. Tidak ada istirahat di tengah ujian tertulis.
     </div>
 
+    <!-- Mata Pelajaran & Sistem Penilaian -->
     <div class="sub-title"><i class="fas fa-pencil-alt"></i> Mata Pelajaran & Sistem Penilaian Tertulis</div>
     <div style="overflow-x: auto;">
       <table>
@@ -491,6 +545,7 @@
     <p><strong>⏱ Alokasi waktu:</strong> 90 menit (pukul 09.00 – 10.30) — tidak ada istirahat di tengah ujian.<br>
     <strong>Sistem penilaian:</strong> Benar = +2 poin, Salah = –1 poin, Tidak dijawab = 0 poin. <strong>Skor maksimal = 100</strong>.</p>
 
+    <!-- LJK & Tata Cara -->
     <div class="sub-title"><i class="fas fa-list-check"></i> Lembar Jawaban (LJK) & Tata Cara</div>
     <div class="info-grid">
       <div class="info-row"><i class="fas fa-pen-ruler"></i> Panitia menyediakan LJK bundaran yang harus dihitamkan. Simulasi pengisian LJK dilakukan sebelum tes.</div>
@@ -499,6 +554,7 @@
       <div class="info-row"><i class="fas fa-ban"></i> Dilarang mencorat-coret lembar jawaban di luar ketentuan. LJK akan discan menggunakan perangkat LJ Scanner.</div>
     </div>
 
+    <!-- Tata Tertib -->
     <div class="sub-title"><i class="fas fa-gavel"></i> Tata Tertib Peserta (detail)</div>
     <div class="info-grid">
       <div class="info-row"><i class="fas fa-clock"></i> Peserta sudah berada di lokasi selambat-lambatnya 15 menit sebelum pembukaan (pukul 08.00 WITA).</div>
@@ -510,6 +566,7 @@
       <div class="info-row"><i class="fas fa-building"></i> Kapasitas ruangan maksimal 60 peserta/sesi. Jika lebih akan dibagi sesi dengan soal paralel form.</div>
     </div>
 
+    <!-- Praktik Ibadah -->
     <div class="sub-title"><i class="fas fa-hands-praying"></i> Babak Praktik Ibadah (khusus 10 besar)</div>
     <p>Peserta dengan 10 nilai tertinggi dari tes tertulis berhak mengikuti praktik shalat dan wudhu pada pukul 13.00 – 14.00. Aspek yang dinilai:</p>
     <ul style="margin-left: 24px; margin-bottom: 12px;">
@@ -519,6 +576,7 @@
     </ul>
     <p><strong>Bobot nilai:</strong> Tes tertulis 70%, Praktik ibadah 30%. Pengumuman Juara Umum saat penutupan.</p>
 
+    <!-- Hadiah -->
     <div class="sub-title"><i class="fas fa-gift"></i> Hadiah & Penghargaan</div>
     <div class="prize-list">
       <div class="prize-item"><strong>🏆 Juara I</strong> Tablet + Uang Tunai + Piagam</div>
@@ -528,6 +586,20 @@
     </div>
     <p>✨ Semua peserta 10 besar mendapat Piagam Apresiasi. Seluruh peserta mendapatkan Sertifikat.</p>
 
+    <!-- SURAT REKOMENDASI KEPALA DINAS (Link Google Drive) -->
+    <div class="sub-title"><i class="fas fa-scroll"></i> Surat Rekomendasi Resmi</div>
+    <div class="rekomendasi-link">
+      <i class="fab fa-google-drive"></i>
+      <div>
+        <strong>Surat Rekomendasi Kepala Dinas Pendidikan dan Kebudayaan Kab. Wajo</strong><br>
+        <a href="https://drive.google.com/file/d/16nW3e59F32P9FInBoQCeeXVwoQJec74g/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+          📄 Klik di sini untuk melihat / mengunduh surat
+        </a>
+        <p style="font-size: 0.75rem; margin-top: 6px; color: #4a627a;">*Surat resmi sebagai bentuk dukungan dan legalitas kegiatan.</p>
+      </div>
+    </div>
+
+    <!-- Kontak -->
     <div class="sub-title"><i class="fas fa-address-card"></i> Sekretariat & Kontak Resmi</div>
     <div class="info-grid">
       <div class="info-row"><i class="fas fa-building"></i> Kampus Nurmilad Boarding School, Desa Lempong, Kec. Bola, Kab. Wajo</div>
@@ -536,7 +608,7 @@
     </div>
   </div>
 
-  <!-- ========== LINGKUP MATERI ========== -->
+  <!-- ========== LINGKUP MATERI (tetap lengkap) ========== -->
   <div class="card" id="lingkup-materi">
     <div class="section-title">
       <i class="fas fa-scroll"></i>
@@ -544,7 +616,6 @@
     </div>
     <p style="margin-bottom: 12px;">Berikut adalah lingkup materi yang akan diujikan dalam tes tertulis. Pelajari poin-poin penting setiap mata pelajaran.</p>
 
-    <!-- MATEMATIKA -->
     <div class="mapel-card">
       <h3><i class="fas fa-calculator" style="color: #2a9d7e;"></i> Matematika</h3>
       <ul>
@@ -560,7 +631,6 @@
       </ul>
     </div>
 
-    <!-- IPA -->
     <div class="mapel-card">
       <h3><i class="fas fa-flask" style="color: #2a9d7e;"></i> Ilmu Pengetahuan Alam (IPA)</h3>
       <ul>
@@ -576,7 +646,6 @@
       </ul>
     </div>
 
-    <!-- BAHASA INDONESIA -->
     <div class="mapel-card">
       <h3><i class="fas fa-language" style="color: #2a9d7e;"></i> Bahasa Indonesia</h3>
       <ul>
@@ -591,7 +660,6 @@
       </ul>
     </div>
 
-    <!-- PAI -->
     <div class="mapel-card">
       <h3><i class="fas fa-mosque" style="color: #2a9d7e;"></i> Pendidikan Agama Islam (PAI)</h3>
       <ul>
@@ -606,7 +674,6 @@
       </ul>
     </div>
 
-    <!-- SEJARAH WAJO dengan tautan playlist -->
     <div class="mapel-card">
       <h3><i class="fas fa-landmark" style="color: #2a9d7e;"></i> Sejarah Wajo</h3>
       <p>Calon peserta diharapkan meluangkan waktu sekitar 50 menit untuk menonton dan memahami video pembelajaran melalui tautan berikut:</p>
@@ -636,7 +703,7 @@
     <div class="info-grid">
       <div class="info-row"><i class="fas fa-check-circle"></i> Peserta wajib membawa fotokopi rapor yang telah dilegalisir saat daftar ulang/verifikasi.</div>
       <div class="info-row"><i class="fas fa-user-graduate"></i> Lomba terbuka untuk seluruh SD/MI sederajat se-Kabupaten Wajo, kelas 6.</div>
-      <div class="info-row"><i class="fas fa-microphone-alt"></i> Pembukaan & penutupan di Kampus Nurmilad; protokol kesehatan disesuaikan.</div>
+      <div class="info-row"><i class="fas fa-microphone-alt"></i> Pembukaan & penutupan di Kampus Nurmilad.</div>
       <div class="info-row"><i class="fas fa-trophy"></i> Juara umum berdasarkan akumulasi tertulis + praktik ibadah.</div>
       <div class="info-row"><i class="fas fa-mobile-alt"></i> Pastikan mengisi LJK dengan benar, karena discan otomatis.</div>
     </div>
@@ -653,7 +720,7 @@
     <p><i class="fab fa-whatsapp"></i> <strong>0857-9609-7322</strong> | 📧 nurmiladboardingschool@gmail.com</p>
     <a href="https://wa.me/6285796097322?text=Assalamualaikum%20saya%20ingin%20bertanya%20mengenai%20Lomba%20Mapel%20ke-5" target="_blank" class="btn-wa-small"><i class="fab fa-whatsapp"></i> Hubungi Panitia</a>
     <hr style="margin: 16px 0 10px;">
-    <p style="font-size: 0.7rem; opacity: 0.7;">Petunjuk teknis resmi berdasarkan Juknis Lomba ke-5 Nurmilad Boarding School 2026. Lingkup materi sesuai pengumuman resmi.</p>
+    <p style="font-size: 0.7rem; opacity: 0.7;">Petunjuk teknis resmi berdasarkan Juknis Lomba ke-5 Nurmilad Boarding School 2026.</p>
     <p style="font-size: 0.7rem;">© Lomba Mapel ke-5 Nurmilad Boarding School 2026</p>
   </div>
 </div>
@@ -665,7 +732,6 @@
   </a>
 </div>
 
-<!-- Smooth scroll untuk tombol -->
 <script>
   (function() {
     const btnJuknis = document.getElementById('btn-juknis');
