@@ -486,6 +486,11 @@
     .rekomendasi-link a:hover {
       color: #1a7f64;
     }
+    /* peringatan khusus jawaban ganda */
+    .warning-circle {
+      background: #fff0f0;
+      border-left: 4px solid #e07c7c;
+    }
   </style>
 </head>
 <body>
@@ -621,13 +626,18 @@
     <p><strong>⏱ Alokasi waktu:</strong> 90 menit, tidak ada istirahat di tengah ujian.<br>
     <strong>Sistem penilaian:</strong> Benar = +2 poin, Salah = –1 poin, Tidak dijawab = 0 poin. <strong>Skor maksimal = 100</strong>.</p>
 
-    <!-- LJK & Tata Cara -->
+    <!-- LJK & Tata Cara + PERINGATAN JAWABAN GANDA -->
     <div class="sub-title"><i class="fas fa-list-check"></i> Lembar Jawaban (LJK) & Tata Cara</div>
     <div class="info-grid">
       <div class="info-row"><i class="fas fa-pen-ruler"></i> Panitia menyediakan LJK bundaran yang harus dihitamkan. Simulasi pengisian LJK dilakukan sebelum tes (dibimbing panitia).</div>
       <div class="info-row"><i class="fas fa-pencil"></i> Wajib menggunakan pensil 2B atau pulpen hitam (alat tulis disiapkan masing-masing peserta).</div>
       <div class="info-row"><i class="fas fa-eraser"></i> Cara membatalkan jawaban: Jika pakai pensil → hapus dengan penghapus hingga bersih, lalu hitamkan bundaran baru. Jika pakai pulpen → coret/silang (X) pada bundaran yang salah, lalu lingkari bundaran baru yang dianggap benar.</div>
       <div class="info-row"><i class="fas fa-ban"></i> Dilarang mencorat-coret lembar jawaban di luar ketentuan. LJK akan discan menggunakan perangkat LJ Scanner.</div>
+    </div>
+    
+    <!-- PERINGATAN TAMBAHAN: MELINGKARI 2 ATAU LEBIH JAWABAN = BATAL (0 POIN) -->
+    <div class="highlight-box warning-circle" style="background: #fff0f0; border-left-color: #e07c7c; margin-top: 8px; margin-bottom: 16px;">
+      <i class="fas fa-exclamation-triangle" style="color: #c0392b;"></i> <strong>PERHATIAN PENTING:</strong> Melingkari <strong>2 (dua) atau lebih jawaban</strong> pada satu nomor soal (misal menghitamkan dua bundaran berbeda) menyebabkan jawaban untuk soal tersebut dianggap <strong>BATAL dan NILAI 0</strong> untuk soal itu. Pastikan hanya menghitamkan SATU bundaran per nomor soal. Kesalahan ganda tidak akan mendapatkan toleransi penilaian.
     </div>
 
     <!-- Tata Tertib (Bagian pelanggaran dihapus) -->
@@ -791,7 +801,7 @@
       <div class="info-row"><i class="fas fa-user-graduate"></i> Lomba terbuka untuk seluruh SD/MI sederajat se-Kabupaten Wajo, kelas 6. Maksimal 2 peserta per sekolah.</div>
       <div class="info-row"><i class="fas fa-microphone-alt"></i> Pembukaan & penutupan di Kampus Nurmilad.</div>
       <div class="info-row"><i class="fas fa-trophy"></i> Juara umum berdasarkan akumulasi tertulis + praktik ibadah.</div>
-      <div class="info-row"><i class="fas fa-mobile-alt"></i> Pastikan mengisi LJK dengan benar, karena discan otomatis.</div>
+      <div class="info-row"><i class="fas fa-mobile-alt"></i> Pastikan mengisi LJK dengan benar, karena discan otomatis. <strong>Melingkari dua atau lebih jawaban = 0 poin untuk soal tersebut.</strong></div>
       <div class="info-row"><i class="fas fa-water"></i> Setiap peserta dan 1 orang pendamping mendapatkan voucher gratis masuk Wisata NBS Telaga Biru Lempong pada 4 Mei 2026.</div>
     </div>
     <div class="highlight-box" style="background: #e1f0ea;">
@@ -815,7 +825,7 @@
 <!-- Floating WhatsApp Button -->
 <div class="floating-wa">
   <a href="https://wa.me/6285796097322?text=Assalamualaikum%20saya%20mau%20tanya%20Lomba%20Mapel%20ke-5" target="_blank" aria-label="WhatsApp Panitia">
-    <i class="fab fa-wa"></i>
+    <i class="fab fa-whatsapp"></i>
   </a>
 </div>
 
