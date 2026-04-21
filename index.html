@@ -27,6 +27,28 @@
       margin: 0 auto;
     }
 
+    /* Kop utama yang lebih jelas */
+    .main-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main-header .school-name {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #0b5e4b;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #0b5e4b 0%, #1a7f64 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: none;
+    }
+    .main-header .school-tagline {
+      font-size: 0.8rem;
+      color: #4b7b6e;
+      margin-top: 6px;
+      font-weight: 500;
+    }
     .hero {
       background: linear-gradient(135deg, #0b5e4b 0%, #1a7f64 100%);
       border-radius: 36px;
@@ -68,7 +90,6 @@
       flex-wrap: wrap;
       gap: 14px;
       margin-top: 22px;
-      font-size: 0.8rem;
       background: rgba(0,0,0,0.2);
       padding: 12px 18px;
       border-radius: 40px;
@@ -364,6 +385,29 @@
       background: linear-gradient(to right, #cfe6df, transparent);
     }
 
+    .voucher-card {
+      background: linear-gradient(115deg, #fff7e0 0%, #fff0cc 100%);
+      border-radius: 28px;
+      padding: 18px 20px;
+      margin: 20px 0 10px;
+      border-left: 8px solid #f4b942;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+    }
+    .voucher-card i {
+      font-size: 2.8rem;
+      color: #2a9d7e;
+    }
+    .voucher-card .voucher-text {
+      flex: 1;
+    }
+    .voucher-card .voucher-text strong {
+      font-size: 1.2rem;
+      color: #0b5e4b;
+    }
+
     @media (max-width: 480px) {
       body {
         padding: 16px 12px 70px;
@@ -388,6 +432,9 @@
       }
       .group-wa-button span {
         font-size: 0.9rem;
+      }
+      .main-header .school-name {
+        font-size: 1.5rem;
       }
     }
 
@@ -443,6 +490,12 @@
 </head>
 <body>
 <div class="container">
+  <!-- KOP UTAMA: tagline "SMP-SMA Berbasis Pesantren" -->
+  <div class="main-header">
+    <div class="school-name">Nurmilad Boarding School</div>
+    <div class="school-tagline">SMP-SMA Berbasis Pesantren</div>
+  </div>
+
   <!-- HERO SECTION -->
   <div class="hero">
     <div class="hero-badge">
@@ -451,7 +504,7 @@
     <h1>Lomba Mata Pelajaran<br><span>Kabupaten Wajo 2026</span></h1>
     <p style="margin-top: 10px; opacity: 0.9;">Mengukur kompetensi + praktik shalat & wudhu | Generasi unggul, cinta budaya</p>
     <div class="hero-date">
-      <div><i class="fas fa-calendar-alt"></i> Pendaftaran: 20 Apr – 4 Mei 2026</div>
+      <div><i class="fas fa-calendar-alt"></i> Pendaftaran: 20 Apr – 3 Mei 2026</div>
       <div><i class="fas fa-clock"></i> Pelaksanaan: 4 Mei 2026</div>
       <div><i class="fas fa-map-marker-alt"></i> Kampus Nurmilad, Lempong</div>
     </div>
@@ -484,48 +537,71 @@
     <i class="fas fa-chevron-right"></i>
   </a>
 
-  <!-- ========== JUKNIS LENGKAP (DENGAN JADWAL LENGKAP & SURAT REKOMENDASI) ========== -->
+  <!-- ========== JUKNIS LENGKAP ========== -->
   <div class="card" id="juknis-section">
     <div class="section-title">
       <i class="fas fa-clipboard-list"></i>
       <span>Petunjuk Teknis Lomba (Juknis) Lengkap</span>
     </div>
     
-    <!-- Latar Belakang lengkap (tanpa dasar) -->
+    <!-- Latar Belakang -->
     <div class="sub-title"><i class="fas fa-flag-checkered"></i> Latar Belakang</div>
-    <p>Nurmilad Boarding School sebagai lembaga pendidikan berbasis pesantren yang berkomitmen mencetak generasi unggul, terus berupaya meningkatkan kualitas pembelajaran dan daya saing murid. Salah satu wujud nyata adalah penyelenggaraan <strong>Lomba Mata Pelajaran</strong> yang saat ini sudah tahun ke-5. Meskipun tidak berlangsung setiap tahun secara berurutan, lomba ini telah menjadi tradisi keilmuan yang dinanti oleh murid SD di Kabupaten Wajo.</p>
+    <p>Nurmilad Boarding School sebagai lembaga pendidikan berbasis pesantren yang berkomitmen mencetak generasi unggul, terus berupaya meningkatkan kualitas pembelajaran dan daya saing murid. Salah satu wujud nyata adalah penyelenggaraan <strong>Lomba Mata Pelajaran</strong> yang saat ini sudah tahun ke-5, telah menjadi tradisi keilmuan yang dinanti oleh murid SD di Kabupaten Wajo.</p>
     <p style="margin-top: 12px;">Memasuki tahun ke-5 penyelenggaraan, lomba ini kembali diadakan dengan semangat baru: mengintegrasikan penguasaan mata pelajaran inti (Matematika, IPA, Bahasa Indonesia, PAI, dan Sejarah Wajo) dengan uji kompetensi ibadah praktis (shalat dan wudhu). Hal ini sejalan dengan visi Nurmilad Boarding School untuk melahirkan generasi yang tidak hanya cerdas secara intelektual, tetapi juga kokoh dalam spiritualitas dan bangga terhadap budayanya.</p>
-    <p style="margin-top: 12px;">Kegiatan ini juga menjadi ajang silaturahmi akademik antar sekolah dasar di Kabupaten Wajo, sekaligus menjaring bibit-bibit unggul untuk melanjutkan pendidikan di lingkungan pesantren yang modern namun tetap berpegang teguh pada nilai-nilai keislaman dan kearifan lokal. Dengan mengusung tema <strong>"Cerdas, Beriman, dan Berbudaya"</strong>, lomba ini diharapkan mampu mendorong semangat belajar siswa sekaligus memperkuat karakter religius dan cinta tanah air.</p>
+    <p style="margin-top: 12px;">Kegiatan ini juga menjadi ajang silaturahmi akademik antar sekolah dasar di Kabupaten Wajo, sekaligus menjaring bibit-bibit unggul untuk melanjutkan pendidikan di lingkungan pesantren yang modern namun tetap berpegang teguh pada nilai-nilai keislaman dan kearifan lokal. Dengan mengusung tema <strong>"Uji Kompetensi, Ukir Prestasi"</strong>, lomba ini diharapkan mampu mendorong semangat belajar siswa sekaligus memperkuat karakter religius dan cinta tanah air.</p>
 
-    <!-- JADWAL LENGKAP (sesuai file upload) -->
-    <div class="sub-title"><i class="fas fa-calendar-week"></i> Jadwal Lengkap Kegiatan</div>
-    
-    <!-- Jadwal Pendaftaran -->
-    <div class="schedule-note">
-      <i class="fas fa-edit"></i> <strong>Masa Pendaftaran</strong><br>
-      📅 20 April – 4 Mei 2026<br>
-      🕒 Online: 24 jam (via Google Form)<br>
-      🕒 Offline: 08.00 – 15.00 WITA (setiap hari, kecuali Jumat <strong>libur</strong>)<br>
-      📍 Tempat: Sekretariat Panitia, Kampus Nurmilad Boarding School, Desa Lempong, Kec. Bola, Kab. Wajo<br>
-      📋 Persyaratan: Fotokopi rapor kelas 6 semester ganjil (halaman biodata & nilai) yang telah dilegalisir.
+    <!-- SYARAT PENDAFTARAN : MAKSIMAL 2 PESERTA PER SEKOLAH -->
+    <div class="sub-title"><i class="fas fa-user-check"></i> Syarat & Ketentuan Peserta</div>
+    <div class="highlight-box" style="background: #e6f7f0; border-left-color: #2a9d7e;">
+      <i class="fas fa-school"></i> <strong>Kuota peserta per sekolah:</strong> Maksimal <strong>2 (dua) orang peserta</strong> dari setiap SD/MI sederajat se-Kabupaten Wajo.<br>
+      <i class="fas fa-id-card"></i> Peserta adalah siswa kelas 6 tahun ajaran 2025/2026.<br>
+      <i class="fas fa-file-alt"></i> Melampirkan fotokopi rapor kelas 6 semester ganjil (halaman biodata & nilai) yang telah dilegalisir.
     </div>
 
-    <!-- Jadwal Hari Pelaksanaan (4 Mei 2026) -->
-    <div style="overflow-x: auto; margin-top: 16px;">
-      <table style="min-width: 300px;">
+    <!-- JADWAL LENGKAP -->
+    <div class="sub-title"><i class="fas fa-calendar-week"></i> Jadwal Lengkap Kegiatan</div>
+    
+    <div style="overflow-x: auto;">
+      <table style="min-width: 500px;">
         <thead>
-          <tr><th>Waktu</th><th>Kegiatan</th><th>Lokasi</th></tr>
+          <tr><th>Kegiatan</th><th>Hari/Tanggal</th><th>Waktu</th><th>Lokasi</th></tr>
         </thead>
         <tbody>
-          <tr><td>08.00 – 09.00</td><td>Pembukaan & Simulasi Pengisian LJK</td><td rowspan="4">Kampus Nurmilad Boarding School</td></tr>
-          <tr><td>09.00 – 10.30</td><td>Tes Tertulis (50 soal, 90 menit)</td></tr>
-          <tr><td>13.00 – 14.00</td><td>Praktik Shalat & Wudhu (khusus 10 besar)</td></tr>
-          <tr><td>14.00 – 15.00</td><td>Penutupan & Penyerahan Hadiah</td></tr>
+          <tr>
+            <td>Pendaftaran</td>
+            <td>Gel 1: 20 - 30 April 2026<br>Gel 2: 1 - 3 Mei 2026</td>
+            <td>Online: 24 jam<br>Offline: 08.00 – 15.00 (hari Jumat/libur)</td>
+            <td>Online / Sekretariat Panitia Kampus Nurmilad Boarding School</td>
+          </tr>
+          <tr>
+            <td>Pendaftaran Ulang</td>
+            <td>4 Mei 2026</td>
+            <td>07.30 - 09.00 (Saat tiba di lokasi)</td>
+            <td>Kampus Nurmilad Boarding School</td>
+          </tr>
+          <tr>
+            <td>Pembukaan & Tes Tertulis</td>
+            <td>Senin, 4 Mei 2026</td>
+            <td>08.00 – 09.00 (Pembukaan)<br>09.00 – 10.30 (Tes)</td>
+            <td>Kampus Nurmilad Boarding School</td>
+          </tr>
+          <tr>
+            <td>Praktik Shalat & Wudhu (10 besar)</td>
+            <td>Senin, 4 Mei 2026</td>
+            <td>13.00 – 14.00</td>
+            <td>Kampus Nurmilad Boarding School</td>
+          </tr>
+          <tr>
+            <td>Penutupan & Penyerahan Hadiah</td>
+            <td>Senin, 4 Mei 2026</td>
+            <td>14.00 – 15.00</td>
+            <td>Kampus Nurmilad Boarding School</td>
+          </tr>
         </tbody>
       </table>
     </div>
     <div class="highlight-box" style="margin-top: 12px;">
-      <i class="fas fa-clock"></i> <strong>Catatan Jadwal:</strong> Jadwal sewaktu-waktu dapat berubah. Peserta diharapkan selalu memantau informasi terbaru melalui grup WhatsApp atau kontak panitia. Tidak ada istirahat di tengah ujian tertulis.
+      <i class="fas fa-clock"></i> <strong>Catatan Jadwal:</strong> Jadwal dapat berubah sesuai kondisi. Peserta diharapkan selalu memantau informasi terbaru melalui grup WhatsApp atau kontak panitia. Pendaftaran ulang wajib diikuti oleh seluruh peserta sebelum mengikuti rangkaian lomba.
     </div>
 
     <!-- Mata Pelajaran & Sistem Penilaian -->
@@ -554,13 +630,13 @@
       <div class="info-row"><i class="fas fa-ban"></i> Dilarang mencorat-coret lembar jawaban di luar ketentuan. LJK akan discan menggunakan perangkat LJ Scanner.</div>
     </div>
 
-    <!-- Tata Tertib -->
+    <!-- Tata Tertib (Bagian pelanggaran dihapus) -->
     <div class="sub-title"><i class="fas fa-gavel"></i> Tata Tertib Peserta (detail)</div>
     <div class="info-grid">
-      <div class="info-row"><i class="fas fa-clock"></i> Peserta sudah berada di lokasi selambat-lambatnya 15 menit sebelum pembukaan (pukul 08.00 WITA).</div>
+      <div class="info-row"><i class="fas fa-clock"></i> Peserta sudah berada di lokasi selambat-lambatnya pukul 07.30 WITA untuk melakukan pendaftaran ulang.</div>
       <div class="info-row"><i class="fas fa-tshirt"></i> Mengenakan seragam sekolah masing-masing (lengkap, rapi, sopan).</div>
       <div class="info-row"><i class="fas fa-hourglass-start"></i> Toleransi keterlambatan maksimal 10 menit dari jam mulai tes (09.00). Peserta yang terlambat >10 menit masih diperkenankan mengikuti lomba dengan konsekuensi waktu yang terbatas.</div>
-      <div class="info-row"><i class="fas fa-mobile-alt"></i> Dilarang membawa: HP/smartphone (wajib dititipkan ke pendamping), kalkulator, catatan, makanan/minuman kecuali air mineral. <strong>Pelanggaran = diskualifikasi langsung.</strong></div>
+      <div class="info-row"><i class="fas fa-mobile-alt"></i> Dilarang membawa: HP/smartphone (wajib dititipkan ke pendamping), kalkulator, catatan, makanan/minuman kecuali air mineral.</div>
       <div class="info-row"><i class="fas fa-comment-slash"></i> Selama ujian tidak boleh berbicara atau melihat jawaban lain. Kendala teknis angkat tangan.</div>
       <div class="info-row"><i class="fas fa-door-open"></i> Setelah waktu habis, lembar jawaban dan soal dikumpulkan. Peserta tidak boleh meninggalkan ruangan sebelum diizinkan.</div>
       <div class="info-row"><i class="fas fa-building"></i> Kapasitas ruangan maksimal 60 peserta/sesi. Jika lebih akan dibagi sesi dengan soal paralel form.</div>
@@ -576,17 +652,27 @@
     </ul>
     <p><strong>Bobot nilai:</strong> Tes tertulis 70%, Praktik ibadah 30%. Pengumuman Juara Umum saat penutupan.</p>
 
-    <!-- Hadiah -->
+    <!-- HADIAH: Beasiswa Pendidikan (bukan uang tunai) -->
     <div class="sub-title"><i class="fas fa-gift"></i> Hadiah & Penghargaan</div>
     <div class="prize-list">
-      <div class="prize-item"><strong>🏆 Juara I</strong> Tablet + Uang Tunai + Piagam</div>
+      <div class="prize-item"><strong>🏆 Juara I</strong> Tablet + Beasiswa Pendidikan + Piagam</div>
       <div class="prize-item"><strong>🥈 Juara II</strong> Tablet + Piagam</div>
-      <div class="prize-item"><strong>🥉 Juara III</strong> Uang Tunai + Piagam</div>
+      <div class="prize-item"><strong>🥉 Juara III</strong> Beasiswa Pendidikan + Piagam</div>
       <div class="prize-item"><strong>🏅 Harapan I,II,III</strong> Piagam + Paket Alat Tulis</div>
     </div>
     <p>✨ Semua peserta 10 besar mendapat Piagam Apresiasi. Seluruh peserta mendapatkan Sertifikat.</p>
 
-    <!-- SURAT REKOMENDASI KEPALA DINAS (Link Google Drive) -->
+    <!-- VOUCHER TELAGA BIRU LEMPONG -->
+    <div class="sub-title"><i class="fas fa-water"></i> Voucher Wisata Telaga Biru Lempong</div>
+    <div class="voucher-card">
+      <i class="fas fa-ticket-alt"></i>
+      <div class="voucher-text">
+        <strong>🎫 Setiap Peserta Mendapatkan 3 Voucher Gratis Masuk Telaga Biru Lempong!</strong><br>
+        Berlaku khusus pada <strong>tanggal 4 Mei 2026</strong> (hari pelaksanaan lomba). Voucher dapat digunakan untuk peserta dan pendamping (maksimal 3 orang per peserta) menikmati keindahan wisata Telaga Biru Lempong. Fasilitas ini merupakan bentuk apresiasi kepada seluruh peserta lomba. Koleksi voucher di sekretariat panitia saat registrasi ulang.
+      </div>
+    </div>
+
+    <!-- SURAT REKOMENDASI -->
     <div class="sub-title"><i class="fas fa-scroll"></i> Surat Rekomendasi Resmi</div>
     <div class="rekomendasi-link">
       <i class="fab fa-google-drive"></i>
@@ -608,7 +694,7 @@
     </div>
   </div>
 
-  <!-- ========== LINGKUP MATERI (tetap lengkap) ========== -->
+  <!-- ========== LINGKUP MATERI ========== -->
   <div class="card" id="lingkup-materi">
     <div class="section-title">
       <i class="fas fa-scroll"></i>
@@ -702,10 +788,11 @@
     </div>
     <div class="info-grid">
       <div class="info-row"><i class="fas fa-check-circle"></i> Peserta wajib membawa fotokopi rapor yang telah dilegalisir saat daftar ulang/verifikasi.</div>
-      <div class="info-row"><i class="fas fa-user-graduate"></i> Lomba terbuka untuk seluruh SD/MI sederajat se-Kabupaten Wajo, kelas 6.</div>
+      <div class="info-row"><i class="fas fa-user-graduate"></i> Lomba terbuka untuk seluruh SD/MI sederajat se-Kabupaten Wajo, kelas 6. <strong>Maksimal 2 peserta per sekolah.</strong></div>
       <div class="info-row"><i class="fas fa-microphone-alt"></i> Pembukaan & penutupan di Kampus Nurmilad.</div>
       <div class="info-row"><i class="fas fa-trophy"></i> Juara umum berdasarkan akumulasi tertulis + praktik ibadah.</div>
       <div class="info-row"><i class="fas fa-mobile-alt"></i> Pastikan mengisi LJK dengan benar, karena discan otomatis.</div>
+      <div class="info-row"><i class="fas fa-water"></i> Seluruh peserta berhak atas 3 voucher gratis masuk Telaga Biru Lempong pada 4 Mei 2026.</div>
     </div>
     <div class="highlight-box" style="background: #e1f0ea;">
       <i class="fas fa-exclamation-triangle"></i> <strong>Peringatan:</strong> Membawa HP ke ruang ujian akan menyebabkan diskualifikasi langsung. Titipkan kepada pendamping masing-masing.
